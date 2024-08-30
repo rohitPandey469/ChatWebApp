@@ -1,19 +1,16 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   height: 100vh;
   background-color: #f0f0f0;
 }
 
 .chat-container {
   width: 100%;
-  max-width: 40rem;
+  max-width: 70rem;
   height: 100%;
-  width: 40rem;
-  display: flex; 
+  display: flex;
   justify-content: center;
   position: absolute;
   bottom: 0;
@@ -30,7 +27,6 @@ body {
   flex-direction: column;
   justify-content: flex-end; /* Align messages to the bottom */
 }
-
 .message {
   background-color: #e0e0e0;
   border-radius: 5px;
@@ -38,6 +34,17 @@ body {
   margin-bottom: 10px;
   word-wrap: break-word;
   white-space: pre-wrap;
+  position: relative;
+}
+
+.copy-button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  cursor: pointer;
 }
 
 .message-input {
