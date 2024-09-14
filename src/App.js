@@ -73,10 +73,8 @@ function App() {
           value={messageInput}
           onChange={(e) => setMessageInput(e.target.value)}
           onKeyPress={handleKeyPress}
-          placeholder="Type a message..."
         ></textarea>
         <button id="sendButton" onClick={sendMessage}>
-          Send
         </button>
       </div>
     </div>
